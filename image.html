@@ -13,9 +13,9 @@
         <input type="radio" name="radio-btn" value="radio2">
         <input type="radio" name="radio-btn" value="radio3">
         <input type="radio" name="radio-btn" value="radio4">
-
+        
         <div class="slide first">
-            <img src="https://allimages.sgp1.digitaloceanspaces.com/wikilaptopcom/2021/02/1614117044_Hinh-nen-chu-de-thanh-pho-va-kien-truc-an.jpg" alt="">
+            <img src="1.jpg" alt="">
         </div>
 
         <div class="slide">
@@ -32,17 +32,28 @@
 
         <div class="navigation-auto">
             <div class="auto-btn1"></div>
-            <div class="auto-btn1"></div>
-            <div class="auto-btn1"></div>
-            <div class="auto-btn1"></div>    
-        </div>        
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>    
+        </div>      
     </div>
 
     <div class="navigation-manual">
         <label form="radio1" class="manual-btn"></label>
         <label form="radio2" class="manual-btn"></label>
         <label form="radio3" class="manual-btn"></label>
+        <label form="radio4" class="manual-btn"></label>
     </div>
 </div>
 
+    <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio' +counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        },2000)
+    </script>
 
